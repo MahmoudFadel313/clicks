@@ -1,7 +1,4 @@
 <?php
-//header("Content-Type: application/javascript");
-//header("Access-Control-Allow-Origin: *");
-
 
 class mag{
     public $mid;
@@ -75,7 +72,6 @@ class mag{
                     ),
                 )
                 
-                
             );
             $mag_post_sel = "select * from mag_post";
             $mag_post_sel_query = mysqli_query($this->mysql_conn,$mag_post_sel);
@@ -142,7 +138,7 @@ class mag{
     }
 
 
-    public function mag_index_type_prof($type){ //Bubble Sort Algorithm
+    public function mag_index_type_prof($type){     //Bubble Sort Algorithm
         $mag_graph = $this->mag_index_explore();
         $temp = 0;
         for($i = 0; $i < count($mag_graph); $i++){
@@ -158,7 +154,7 @@ class mag{
     }
 
 
-    public function mag_index_clap(){ //Bubble Sort Algorithm
+    public function mag_index_clap(){         //Bubble Sort Algorithm
         $mag_graph = $this->mag_index_explore();
         $temp = 0;
         for($i = 0; $i < count($mag_graph); $i++){
